@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Szilárd Étterem</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Ez itt a honlapom!
+
+  <div class="container">
+
+    <h1>🍔 Étlap</h1>
+
+    <div class="controls">
+
+      <select id="category">
+        <option value="burger">Burger</option>
+        <option value="pizza">Pizza</option>
+        <option value="pasta">Pasta</option>
+        <option value="dessert">Desszert</option>
+        <option value="rice">Rizs</option>
+      </select>
+
+      <button id="load">
+        Kép az ételről
+      </button>
+
+    </div>
+
+      <div class="image-box">
+      <img 
+        id="foodpic"
+        src="https://via.placeholder.com/500x300?text=Food+Image"
+        alt="Kép az ételről :("
+      >
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
